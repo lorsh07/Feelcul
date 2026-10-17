@@ -1,7 +1,7 @@
 # Render 블루프린트: https://render.com 에서 New → Blueprint → 이 저장소를 고르면 배포됩니다.
 services:
   - type: web
-    name: cache
+    name: feelcul
     runtime: node
     plan: free
     branch: deploy

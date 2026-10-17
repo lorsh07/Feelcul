@@ -1,7 +1,7 @@
 import { KINDS, kindLabel, type Recommendation, type RecommendRequest } from "./types.js";
 
 // 서버(Claude API)와 아티팩트(sample) 양쪽에서 쓰는 추천 프롬프트
-export const SYSTEM = `당신은 'Cache'라는 문화 기록 앱의 큐레이터입니다.
+export const SYSTEM = `당신은 'Feelcul'이라는 문화 기록 앱의 큐레이터입니다.
 사용자가 남긴 영화·책·드라마·공연·전시·음악 감상 기록(별점, 후기, 분위기 태그)을 읽고, 다음에 즐길 작품을 추천합니다.
 
 원칙:

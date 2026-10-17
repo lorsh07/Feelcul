@@ -48,5 +48,5 @@ if (fs.existsSync(path.join(dist, "index.html"))) {
 
 const port = Number(process.env.PORT ?? 8787);
 app.listen(port, () => {
-  console.log(`Cache server → http://localhost:${port} (AI ${process.env.ANTHROPIC_API_KEY ? "on" : "off"})`);
+  console.log(`Feelcul server → http://localhost:${port} (AI ${process.env.ANTHROPIC_API_KEY ? "on" : "off"})`);
 });

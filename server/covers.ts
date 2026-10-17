@@ -11,7 +11,7 @@ const GOOGLE_BOOKS = process.env.GOOGLE_BOOKS_API_KEY ?? "";
 async function getJson<T>(url: string, headers: Record<string, string> = {}): Promise<T | null> {
   try {
     const res = await fetch(url, {
-      headers: { "User-Agent": "Cache/1.0 (culture log app)", ...headers },
+      headers: { "User-Agent": "Feelcul/1.0 (culture log app)", ...headers },
       signal: AbortSignal.timeout(6000),
     });
     return res.ok ? ((await res.json()) as T) : null;

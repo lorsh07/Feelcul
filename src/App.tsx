@@ -136,7 +136,7 @@ export default function App() {
       <nav className="tabbar">
         <div className="side-brand">
           <span className="side-logo"><Icon name="sparkles" size={18} /></span>
-          Cache
+          Feelcul
         </div>
         {TABS.map((t) => (
           <button key={t.id} className={tab === t.id ? "on" : ""} onClick={() => go(t.id)} aria-current={tab === t.id}>
