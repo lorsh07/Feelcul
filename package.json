@@ -39,6 +39,6 @@
   "type": "module",
   "private": true,
   "engines": {
-    "node": ">=20"
+    "node": ">=20.12"
   }
 }

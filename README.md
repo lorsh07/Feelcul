@@ -29,13 +29,15 @@ claude.ai 아티팩트에서는 외부 이미지를 불러올 수 없어 회색 
 ## 실행
 
 ```bash
-npm install --include=dev
-cp .env.example .env   # ANTHROPIC_API_KEY 입력 (선택)
-export $(cat .env | xargs)
+npm install
+cp .env.example .env   # Windows: copy .env.example .env  → 가진 키만 입력 (모두 선택)
 npm run dev            # http://localhost:5173
 ```
 
 배포용: `npm run build && npm start` (서버가 `dist`를 함께 서빙)
+
+서버는 시작할 때 `.env`를 자동으로 읽습니다. 같은 이름의 환경 변수가 이미 있으면 그 값이 우선합니다.
+Node.js 20.12 이상이 필요합니다.
 
 `ANTHROPIC_API_KEY`가 없거나 API 호출이 실패하면 내장 카탈로그(`server/catalog.ts`) 기반 추천으로 자동 전환되고,
 화면에 "오프라인"으로 표시됩니다.
